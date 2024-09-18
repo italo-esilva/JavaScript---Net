@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Console e Window</title>
+  <link rel="stylesheet" href="style/styles.css">
+
+</head>
+
+<body>
+  <div class="tipo">
+    <h1>Olá, Mundo!</h1>
+    <p>Vencemos o início.</p>
+  </div>
+  <script>
+    let x = 10
+    console.log("O valor de x é:" + x); /* Exibe uma mensagem */
+
+    window.alert(" Deu certo :)"); /*Exibe um alerta*/
+
+    let nome = window.prompt("Qual é o seu nome?"); /*Permitirá a entrada do dado e o console mostrará a saída*/
+    console.log("Nome informado:" + nome);
+
+    /* O window.open() abre uma nova janela ou aba com o URL especificado.*/
+    window.open("https://github.com/italo-esilva/DF-Inova-Tech/blob/main/UNISENAI/styles/styles.css", "_blank");
+
+
+
+    window.setTimeout(function () {
+      console.log("Executando após 5 segundos");
+    }, 2000); /* 5000 milissegundos = 5 segundos*/
+
+    window.confirm("Você está entendendo?")
+
+    window.close() //Fechará a janela//
+
+    window.print() //Iniciará uma impressão da página//
+
+    window.setTimeout(function () {
+      console.log("Você não quer aprender mesmo?")
+    }, delay); //Executa uma função repetidamente em intervalos de tempo (milissegundos)
+
+    window.clearInterval(InvervalID);
+
+    window.clearTimeout(TimeoutID);
+
+    window.scroll(x, y); //Rola a página para a posição especificada
+
+    window.scrollBy(x, y); //Rola a página pela quantidade especificada
+
+    window.resizeTo(width, height); // redimensiona a janela para a largura e altura especificadas
+
+    window.moveTo(x, y); //Move a janela para as coordenadas especificadas
+
+    window.document; //Iniciará uma alteração com o DOM
+
+    window.history(); //Histórico 
+
+    window.forward(); //Próxima janela
+
+    window.back(); // Janela anterior
+
+    window.go(0); // Navega no histórico, exemplo janela nº 5
+
+    window.getSelection; // Selecione um determinado item
+
+    window.removeEventListener(event, function);
+
+    window.focus;  // Foco na janela
+
+    window.blur; // Janela embaçada
+
+    //Principais Consoles
+    console.log(messege); //Exibe a mensagem
+    console.error(messege); // Exibe um pop-up de erro
+    console.info(messege); // Exibe um pop-up de informação
+    console.warn(messege); // Exibe um pop-up de aviso
+
+    //Principais Consoles de Saída
+    console.clear //Limpa o console
+    console.dir // Cria um diretório
+    console.table //  Cria uma tabela
+
+    let pessoas = [{ nome: "Ana", idade: 28 }, { nome: "Bruno", idade: 34 }];
+    console.table(pessoas);
+    //Agrupa mensagens em uma hierarquia
+    console.group("Grupo de logs");
+    console.log("Log dentro do grupo");
+    console.groupEnd();
+
+    console.assert(2 === 3, "Erro: 2 não é igual a 3"); //Exibe um mensagem de erro se a condição for falsa
+
+  </script>
+</body>
+
+</html>
